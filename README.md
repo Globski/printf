@@ -34,7 +34,7 @@ This project includes the following tasks:
 | --- | --- | --- |
 | **Task 0** | Write a function that produces output according to a format. | [Task 0 Source](./print-handler.c) |
 | **Task 1** | Handle the conversion specifiers `%d` and `%i`. | [Task 1 Source](./handle_int.c) |
-| **Task 2** | Implement the custom conversion specifier `%b` for binary. | [Task 2 Source](task_2.c) |
+| **Task 2** | Implement the custom conversion specifier `%b` for binary. | [Task 2 Source](./binary-handle.c) |
 | **Task 3** | Handle conversion specifiers `%u`, `%o`, `%x`, and `%X`. | [Task 3 Source](task_3.c) |
 | **Task 4** | Optimize buffer usage. | [Task 4 Source](task_4.c) |
 | **Task 5** | Add the custom specifier `%S` for non-printable characters. | [Task 5 Source](task_5.c) |

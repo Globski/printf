@@ -15,5 +15,12 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	{
 		handle_string(args, count);
 	}
-
+	else if (format[*i] == '%')
+		handle_percent(count);
+	else
+	{
+		_putchar('%');
+		_putchar(format[*i]);
+		(*count) += 2;
+	}
 }

@@ -11,5 +11,9 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 {
 	if (format[*i] == 'c')
 		handle_char(args, count);
+	else if (format[*i] == 's')
+	{
+		handle_string(args, count);
+	}
 
 }

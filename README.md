@@ -32,7 +32,7 @@ This project includes the following tasks:
 
 | Project | Description | Source Code |
 | --- | --- | --- |
-| **Task 0** | Write a function that produces output according to a format. | [Task 0 Source](task_0.c) |
+| **Task 0** | Write a function that produces output according to a format. | [Task 0 Source](./print-handler.c) |
 | **Task 1** | Handle the conversion specifiers `%d` and `%i`. | [Task 1 Source](task_1.c) |
 | **Task 2** | Implement the custom conversion specifier `%b` for binary. | [Task 2 Source](task_2.c) |
 | **Task 3** | Handle conversion specifiers `%u`, `%o`, `%x`, and `%X`. | [Task 3 Source](task_3.c) |

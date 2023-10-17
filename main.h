@@ -19,6 +19,7 @@ void handle_percent(int *count);
 int _printf(const char *format, ...);
 void handle_specifier(const char *format, va_list args, int *count, int *i);
 void handle_int(va_list args, int *count);
+void handle_uint(va_list args, int *count);
 void print_binary(unsigned int num, int *count);
 void handle_binary(va_list args, int *count);
 

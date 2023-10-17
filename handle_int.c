@@ -40,11 +40,6 @@ void handle_uint(va_list args, int *count)
 	unsigned int num2 = va_arg(args, unsigned int);
 	int div = 1;
 
-	if (num2 < 0)
-	{
-		num2 = -num2;
-		(*count)++;
-	}
 	while ((num2 / div) > 9)
 		div *= 10;
 	while (div >= 1)

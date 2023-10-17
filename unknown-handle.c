@@ -11,7 +11,7 @@
  * @count: A pointer to the character count.
  * @i: A pointer to the current position in the format string.
  */
-void handle_unknown(const char *format, va_list args, int *count, int *i)
+void handle_unknown(const char *format, va_list args __attribute__((unused)), int *count, int *i)
 {
 	_putchar('%');
 	_putchar(format[*i]);

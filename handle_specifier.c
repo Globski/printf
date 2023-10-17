@@ -16,7 +16,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	else if (format[*i] == '%')
 		handle_percent(count);
 	else if (format[*i] == 'r')
-        	handle_unknown(format, args, count, i);
+		handle_unknown(format, args, count, i);
 	else if (format[*i] == 'd' || format[*i] == 'i')
 		handle_int(args, count);
 	else if (format[*i] == 'b')
@@ -29,7 +29,6 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_hex(args, count, 0);
 	else if (format[*i] == 'X')
 		handle_hex(args, count, 1);
-	
 	else
 	{
 		_putchar('%');

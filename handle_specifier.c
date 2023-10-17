@@ -27,10 +27,8 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_hex(args, count, 0);
 	else if (format[*i] == 'X')
 		handle_hex(args, count, 1);
-	else
+	else if (format[*i] == 'r')
 	{
-		_putchar('%');
-		_putchar(format[*i]);
-		(*count) += 2;
+        	handle_unknown(format, args, count, i);
 	}
 }

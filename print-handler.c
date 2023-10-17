@@ -38,6 +38,7 @@ void handle_string(va_list args, int *count)
 			(*count)++;
 		}
 	}
+	printf("\n");
 }
 
 /**

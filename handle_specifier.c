@@ -21,13 +21,10 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_binary(args, count);
 	else if (format[*i] == 'u')
 		handle_uint(args, count);
-<<<<<<< HEAD
-=======
 	else if (format[*i] == 'x')
 		handle_hex(args, count, 0);
     	else if (format[*i] == 'X')
-        	handle_hex(args, count, 1); 
->>>>>>> f5bace297bd12355cbeb1e68df37e3e207106c7b
+        	handle_hex(args, count, 1);
 	else
 	{
 		_putchar('%');

@@ -24,5 +24,7 @@ void handle_uint(va_list args, int *count);
 void print_binary(unsigned int num, int *count);
 void handle_binary(va_list args, int *count);
 void handle_hex(va_list args, int *count, int upcase);
+void print_octal(unsigned int n, int *count);
+void handle_octal(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

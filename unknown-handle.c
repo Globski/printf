@@ -17,5 +17,5 @@ void handle_unknown(const char *format, va_list args, int *count, int *i)
 
 	_putchar('%');
 	_putchar(format[*i]);
-	(*count) += 2;
+	(*count) += 1;
 }

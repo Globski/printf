@@ -9,6 +9,8 @@
 #include <stddef.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
 int _putchar(char c);
 void handle_string(va_list args, int *count);

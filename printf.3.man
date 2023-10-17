@@ -1,0 +1,55 @@
+.TH _PRINTF 3 "October 2023" "ALX Africa. C - _printf"
+
+.SH NAME
+.B _printf \- custom printf function
+
+.SH SYNOPSIS
+.B #include \FB"main.h"
+
+.B int printf(const char *\fIformat\fB, ...);
+
+.SH DESCRIPTION
+
+
+.SH RETURN VALUE
+The \fB_printf\fR function returns the number of characters printed, excluding
+the null byte used to end output to strings.
+
+.SH FORMAT SPECIFIERS
+The following conversion specifiers are supported:
+
+.TP
+.B \fB%c\fR
+Print a single character.
+
+.TP
+.B \fB%s\fR
+Print a null-terminated string.
+
+.TP
+.B \fB%%\fR
+Print a literal percent sign.
+
+.SH EXAMPLES
+The following examples demonstrate the usage of the \fBmyprintf\fR function:
+
+.RS
+
+.RE
+
+
+.SH SEE ALSO
+man(1), printf(3)
+
+.SH AUTHOR
+Ogunsemore Gloria and Emmanuel Ifediora
+
+.SH BUGS
+No known bugs.
+
+.SH COPYRIGHT
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+.SH DATE
+This man page was created on October 2023 for _printf project.

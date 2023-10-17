@@ -19,6 +19,10 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_percent(count);
 	else if (format[*i] == 'd' || format[*i] == 'i')
 		handle_int(args, count);
+	else if (format[*i] == 'b')
+	{
+		handle_binary(args, count);
+	}
 	else
 	{
 		_putchar('%');

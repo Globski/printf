@@ -7,7 +7,7 @@
  */
 void handle_int(va_list args, int *count)
 {
-	int num = va_arg(args, int);
+	long num = va_arg(args, int);
 	int div = 1;
 
 	if (num < 0)
@@ -25,5 +25,30 @@ void handle_int(va_list args, int *count)
 		_putchar(((num / div) % 10) + '0');
 		(*count)++;
 		div /= 10;
+	}
+}
+
+/**
+ * handle_uint - Hamdles the '%u' specifier in the printf function.
+ * @args: va_list containing arguments.
+ * @count: pointer to the number of characters.
+ */
+void handle_uint(va_list args, int *count)
+{
+	unsigned int num = va_arg(args, unsigned int);
+	int div = 1;
+
+	if (num < 0)
+	{
+		num = -num;
+		(*count)++;
+	}
+	while ((num / div) > 9)
+		div *= 10;
+	while (div >= 1)
+	{
+		_putchar(((num / div) % 10) + 48);
+		div /= 10;
+		(*count)++;
 	}
 }

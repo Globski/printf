@@ -18,41 +18,29 @@ void handle_hex(va_list args, int *count, int upcase)
 		(*count)++;
 		return;
 	}
-
 	hold = num;
 	len = 0;
-
 	while (hold > 0)
 	{
 		len++;
 		hold /= 16;
 	}
-
 	hexMemory = (char *)malloc(len + 1);
 	if (hexMemory == NULL)
-	{ 
 		return;
-	}
-
-
 	while (num > 0)
 	{
 		int modulo = num % 16;
+
 		if (modulo < 10)
-		{
 			hexMemory[i] = modulo + 48;
-		}
 		else
-		{
 			hexMemory[i] = (upcase ? 'A' : 'a') + modulo - 10;
-		}
 		num /= 16;
 		i++;
 	}
-
 	hexMemory[i] = '\0';
-
-	hold1 = len -1;
+	hold1 = len - 1;
 	for (i = hold1; i >= 0; i--)
 	{
 		_putchar(hexMemory[i]);

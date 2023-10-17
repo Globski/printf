@@ -11,6 +11,7 @@
 #include <unistd.h>
 
 int _putchar(char c);
-void print_string(char *str);
+void handle_string(va_list args, int *count);
+void handle_char(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

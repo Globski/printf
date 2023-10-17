@@ -45,7 +45,7 @@ void handle_string(va_list args, int *count)
  * @args: A va_list containing arguments.
  * @count: pointer to the character count.
  */
-void handle_percent(va_list args, int *count)
+void handle_percent(int *count)
 {
 	_putchar('%');
 	(*count)++;

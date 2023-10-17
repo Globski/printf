@@ -11,7 +11,7 @@ void handle_int(va_list args, int *count)
 	int div = 1;
 
 	if (args == NULL)
-        return;
+		return;
 	if (num < 0)
 	{
 		_putchar('-');

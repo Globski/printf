@@ -13,7 +13,7 @@
 int _putchar(char c);
 void handle_string(va_list args, int *count);
 void handle_char(va_list args, int *count);
-void handle_percent(va_list args, int *count);
+void handle_percent(int *count);
 int _printf(const char *format, ...);
 void handle_specifier(const char *format, va_list args, int *count, int *i);
 

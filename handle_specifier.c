@@ -19,6 +19,8 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_int(args, count);
 	else if (format[*i] == 'b')
 		handle_binary(args, count);
+	else if (format[*i] == 'u')
+		handle_uint(args, count);
 	else if (format[*i] == 'x')
 		handle_hex(args, count, 0);
     	else if (format[*i] == 'X')

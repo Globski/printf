@@ -15,6 +15,7 @@ void handle_char(va_list args, int *count)
 	_putchar(c);
 	(*count)++;
 }
+
 /**
  * handle_string - Handles the '%s' format specifier in the printf function.
  * @args: A va_list containing the arguments.
@@ -39,4 +40,13 @@ void handle_string(va_list args, int *count)
 	}
 }
 
-
+/**
+ * handle_percent - Handles '%' in the printf function.
+ * @args: A va_list containing arguments.
+ * @count: pointer to the character count.
+ */
+void handle_percent(va_list args, int *count)
+{
+	_putchar('%');
+	(*count)++;
+}

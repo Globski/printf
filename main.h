@@ -18,5 +18,6 @@ void handle_char(va_list args, int *count);
 void handle_percent(int *count);
 int _printf(const char *format, ...);
 void handle_specifier(const char *format, va_list args, int *count, int *i);
+void handle_int(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

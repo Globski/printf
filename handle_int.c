@@ -10,6 +10,8 @@ void handle_int(va_list args, int *count)
 	int num = va_arg(args, int);
 	int div = 1;
 
+	if (args == NULL)
+        return;
 	if (num < 0)
 	{
 		_putchar('-');

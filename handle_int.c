@@ -37,19 +37,19 @@ void handle_int(va_list args, int *count)
  */
 void handle_uint(va_list args, int *count)
 {
-	unsigned int num = va_arg(args, unsigned int);
+	unsigned int num2 = va_arg(args, unsigned int);
 	int div = 1;
 
-	if (num < 0)
+	if (num2 < 0)
 	{
-		num = -num;
+		num2 = -num2;
 		(*count)++;
 	}
-	while ((num / div) > 9)
+	while ((num2 / div) > 9)
 		div *= 10;
 	while (div >= 1)
 	{
-		_putchar(((num / div) % 10) + 48);
+		_putchar(((num2 / div) % 10) + 48);
 		div /= 10;
 		(*count)++;
 	}

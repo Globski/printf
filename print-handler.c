@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * handle_char - Handles the '%c' format specifier in the printf function.
+ * @args: A va_list containing the arguments.
+ * @count: A pointer to the character count.
+ *
+ * Description: This function retieves a character argument from va_list
+ * and writes it to the output.
+ */
+void handle_char(va_list args, int *count)
+{
+	char c = va_arg(args, int);
+
+	_putchar(c);
+	(*count)++;
+}
+/**
  * handle_string - Handles the '%s' format specifier in the printf function.
  * @args: A va_list containing the arguments.
  * @count: A pointer to the character count.

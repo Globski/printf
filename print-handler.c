@@ -38,6 +38,16 @@ void handle_string(va_list args, int *count)
 			(*count)++;
 		}
 	}
+	else
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		(*count) += 6;
+	}
 }
 
 /**

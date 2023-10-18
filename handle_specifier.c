@@ -27,6 +27,10 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 		handle_hex(args, count, 0);
 	else if (format[*i] == 'X')
 		handle_hex(args, count, 1);
+	else if (format[*i] == 'p')
+	{
+		handle_pointer(args, count);
+    	}
 	else
 	{
 		_putchar('%');

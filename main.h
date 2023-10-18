@@ -28,10 +28,10 @@ void print_octal(unsigned int n, int *count);
 void handle_octal(va_list args, int *count);
 void handle_pointer(va_list args, int *count);
 void handle_string_custom(va_list args, int *count);
-void handle_short_int(va_list args, int *count);
-void handle_short_unsigned_int(va_list args, int *count);
-void handle_long_int(va_list args, int *count);
-void handle_long_unsigned_int(va_list args, int *count);
-void handle_unsigned_int(va_list args, int *count);
+void print_short_int(va_list args, int *count);
+void print_short_unsigned_int(va_list args, int *count);
+void print_long_int(va_list args, int *count);
+void print_long_unsigned_int(va_list args, int *count);
+void print_unsigned_int(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

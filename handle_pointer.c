@@ -8,6 +8,7 @@
 void handle_pointer(va_list args, int *count)
 {
 	void *ptr = va_arg(args, void *);
+	int i;
 
 	_putchar('0');
 	_putchar('x');
@@ -20,7 +21,7 @@ void handle_pointer(va_list args, int *count)
 
 		int flagStart = 0;
 
-		for (int i = (sizeof(void *) * 2) - 1; i >= 0; i--)
+		for (i = (sizeof(void *) * 2) - 1; i >= 0; i--)
 		{
 			int digit = (num >> (i * 4)) & 0xf;
 
@@ -36,7 +37,7 @@ void handle_pointer(va_list args, int *count)
 	{
 		char nil[] = "(nil)";
 
-		for (int i = 0; nil[i]; i++)
+		for (i = 0; nil[i]; i++)
 		{
 			_putchar(nil[i]);
 			(*count)++;

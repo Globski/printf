@@ -62,7 +62,8 @@ void handle_unsigned_int(va_list args, int *count)
 }
 
 /**
- * handle_short_unsigned_int - Handles and prints a short unsigned integer argument
+ * handle_short_unsigned_int - Handles and prints a short unsigned
+ * integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
  *
@@ -88,7 +89,8 @@ void handle_short_unsigned_int(va_list args, int *count)
 }
 
 /**
- * handle_long_unsigned_int - Handles and prints a long unsigned integer argument
+ * handle_long_unsigned_int - Handles and prints a long unsigned
+ * integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
  *

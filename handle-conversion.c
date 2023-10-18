@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * handle_string_custom - Format and print a string with
  * non-printable characters

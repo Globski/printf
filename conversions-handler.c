@@ -42,7 +42,7 @@ void handle_short_int(va_list args, int *count)
  * Description: This function extracts an unsigned integer from
  * va_list args, converts it to a string, and prints it.
  */
-void handle_unsigned(va_list args, int *count)
+void handle_unsigned_int(va_list args, int *count)
 {
 	unsigned int num = va_arg(args, unsigned int);
 
@@ -69,7 +69,7 @@ void handle_unsigned(va_list args, int *count)
  * Description: This function extracts a short unsigned integer from
  * va_list args, converts it to a string, and prints it.
  */
-void handle_short_unsigned(va_list args, int *count)
+void handle_short_unsigned_int(va_list args, int *count)
 {
 	unsigned short num = va_arg(args, int);
 	int div = 1;
@@ -95,7 +95,7 @@ void handle_short_unsigned(va_list args, int *count)
  * Description: This function extracts a long unsigned integer from
  * va_list args, converts it to a string, and prints it.
  */
-void handle_long_unsigned(va_list args, int *count)
+void handle_long_unsigned_int(va_list args, int *count)
 {
 	unsigned long num = va_arg(args, unsigned long);
 	unsigned long div = 1;

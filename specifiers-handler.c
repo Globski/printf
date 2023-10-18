@@ -23,9 +23,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 			(*i)++;
 		}
 		else
-		{
 			handle_integer(args, count);
-		}
 	}
 	else if (format[*i] == 'u')
 	{
@@ -35,9 +33,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 			(*i) += 2;
 		}
 		else
-		{
 			handle_unsigned_int(args, count);
-		}
 	}
 	else if (format[*i] == 'b')
 		handle_binary(args, count);

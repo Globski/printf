@@ -27,5 +27,6 @@ void handle_hex(va_list args, int *count, int upcase);
 void print_octal(unsigned int n, int *count);
 void handle_octal(va_list args, int *count);
 void handle_pointer(va_list args, int *count);
+void handle_string_custom(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

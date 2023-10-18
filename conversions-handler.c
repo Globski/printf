@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * handle_short_int - Handles and prints a short integer argument
+ * print_short_int - Handles and prints a short integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
  *
@@ -35,7 +35,7 @@ void print_short_int(va_list args, int *count)
 }
 
 /**
- * handle_unsigned_int - Handles and prints an unsigned integer argument
+ * print_unsigned_int - Handles and prints an unsigned integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
  *
@@ -62,7 +62,7 @@ void print_unsigned_int(va_list args, int *count)
 }
 
 /**
- * handle_short_unsigned_int - Handles and prints a short unsigned
+ * print_short_unsigned_int - Handles and prints a short unsigned
  * integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
@@ -89,7 +89,7 @@ void print_short_unsigned_int(va_list args, int *count)
 }
 
 /**
- * handle_long_unsigned_int - Handles and prints a long unsigned
+ * print_long_unsigned_int - Handles and prints a long unsigned
  * integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
@@ -116,7 +116,7 @@ void print_long_unsigned_int(va_list args, int *count)
 }
 
 /**
- * handle_long_int - Handles and prints a long integer argument
+ * print_long_int - Handles and prints a long integer argument
  * @args: A va_list of arguments
  * @count: A pointer to the character count
  *

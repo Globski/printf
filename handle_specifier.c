@@ -30,7 +30,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	else if (format[*i] == 'p')
 		handle_pointer(args, count);
 	else if (format[*i] == 'S')
-        	handle_string_custom(args, count);
+		handle_string_custom(args, count);
 	else
 	{
 		_putchar('%');

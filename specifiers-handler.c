@@ -31,12 +31,12 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	{
 		if (format[*i + 1] == 'l' && format[*i + 2] == 'l')
 		{
-			handle_long_unsigned(args, count);
+			handle_long_unsigned_int(args, count);
 			(*i) += 2;
 		}
 		else
 		{
-			handle_unsigned(args, count);
+			handle_unsigned_int(args, count);
 		}
 	}
 	else if (format[*i] == 'b')

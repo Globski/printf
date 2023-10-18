@@ -18,7 +18,7 @@ void handle_string(va_list args, int *count);
 void handle_char(va_list args, int *count);
 void handle_percent(int *count);
 int _printf(const char *format, ...);
-void handle_specifier(const char *format, va_list args __attribute__((unused)), int *count, int *i);
+void handle_specifier(const char *format, va_list args, int *count, int *i);
 void handle_int(va_list args, int *count);
 void handle_uint(va_list args, int *count);
 void print_binary(unsigned int num, int *count);
@@ -26,6 +26,5 @@ void handle_binary(va_list args, int *count);
 void handle_hex(va_list args, int *count, int upcase);
 void print_octal(unsigned int n, int *count);
 void handle_octal(va_list args, int *count);
-void handle_unknown(const char *format, va_list args, int *count, int *i);
 
 #endif /* #ifndef MAIN_H */

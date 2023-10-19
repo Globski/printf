@@ -47,7 +47,7 @@ int main(void)
 	len = _printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
 	len = _printf("%i + %i = %i\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
 	_printf("Unknown:[%r]\n");
-
+	len = _printf("%p", NULL);
 	printf("Unknown:[%r]\n");
 	_printf("%b\n", 98);
 	_printf("%S\n", "Best\nSchool");

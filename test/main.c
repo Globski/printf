@@ -38,6 +38,11 @@ int main(void)
 	len2 = printf("Percent:[%%]\n");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
+	len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	_printf("Len:[%d]\n", len);
+	printf("Len:[%d]\n", len2);
+	len = _printf("%d\n", INT_MIN);
 	_printf("Unknown:[%r]\n");
 	printf("Unknown:[%r]\n");
 	_printf("%b\n", 98);

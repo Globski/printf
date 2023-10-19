@@ -9,7 +9,7 @@
  * args, converts it to a string, and prints it. If the integer is
  * negative, it adds a '-' sign to the output.
  */
-void print_short_int(va_list args, int *count)
+void handle_short_int(va_list args, int *count)
 {
 	short num = va_arg(args, int);
 	int div = 1;
@@ -42,7 +42,7 @@ void print_short_int(va_list args, int *count)
  * Description: This function extracts a short unsigned integer from
  * va_list args, converts it to a string, and prints it.
  */
-void print_short_unsigned_int(va_list args, int *count)
+void handle_short_unsigned_int(va_list args, int *count)
 {
 	unsigned short num = va_arg(args, int);
 	int div = 1;
@@ -69,7 +69,7 @@ void print_short_unsigned_int(va_list args, int *count)
  * Description: This function extracts a long unsigned integer from
  * va_list args, converts it to a string, and prints it.
  */
-void print_long_unsigned_int(va_list args, int *count)
+void handle_long_unsigned_int(va_list args, int *count)
 {
 	unsigned long num = va_arg(args, unsigned long);
 	unsigned long div = 1;
@@ -95,7 +95,7 @@ void print_long_unsigned_int(va_list args, int *count)
  * Description: This function extracts a long integer from va_list args,
  * converts it to a string, and prints it. It also handles negative values.
  */
-void print_long_int(va_list args, int *count)
+void handle_long_int(va_list args, int *count)
 {
 	long num = va_arg(args, long);
 	int div = 1;

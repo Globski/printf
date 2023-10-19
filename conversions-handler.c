@@ -32,6 +32,7 @@ void handle_short_int(va_list args, int *count)
 		(*count)++;
 		div /= 10;
 	}
+}
 
 /**
  * handle_short_unsigned_int - Handles and prints a short unsigned

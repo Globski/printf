@@ -16,7 +16,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	else if (format[*i] == '%')
 		handle_percent(count);
 	else if (format[*i] == 'd' || format[*i] == 'i')
-		handle_integer_or_long(args, count, format, i);
+		handle_int_or_long(args, count, format, i);
 	else if (format[*i] == 'u')
 		handle_unsigned(args, count, format, i);
 	else if (format[*i] == 'b')
@@ -59,13 +59,14 @@ void handle_unsigned(va_list args, int *count, const char *format, int *i)
 }
 
 /**
- * handle_integer_or_long - Handles the 'd' and 'i' format specifiers, which can be 'd', 'i', or 'll'.
+ * handle_integer_or_long - Handles the 'd' and 'i' format specifiers, which
+ * can be 'd', 'i', or 'll'.
  * @args: The va_list containing the arguments.
  * @count: A pointer to the character count.
  * @format: The format string being processed.
  * @i: A pointer to the current position in the format string.
  */
-void handle_integer_or_long(va_list args, int *count, const char *format, int *i)
+void handle_int_or_long(va_list args, int *count, const char *format, int *i)
 {
 	if (format[*i + 1] == 'l')
 	{

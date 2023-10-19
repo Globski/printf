@@ -38,7 +38,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 }
 
 /**
- * handle_length_modifier - Handles length modifier for numeric specifiers.
+ * handle_len_modifier - Handles length modifier for numeric specifiers.
  * @format: The format string being processed.
  * @args: The va_list containing the arguments.
  * @count: A pointer to the character count.

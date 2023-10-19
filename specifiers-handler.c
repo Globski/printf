@@ -59,7 +59,7 @@ void handle_unsigned(va_list args, int *count, const char *format, int *i)
 }
 
 /**
- * handle_integer_or_long - Handles the 'd' and 'i' format specifiers, which
+ * handle_int_or_long - Handles the 'd' and 'i' format specifiers, which
  * can be 'd', 'i', or 'll'.
  * @args: The va_list containing the arguments.
  * @count: A pointer to the character count.

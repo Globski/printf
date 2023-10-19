@@ -32,34 +32,6 @@ void print_short_int(va_list args, int *count)
 		(*count)++;
 		div /= 10;
 	}
-}
-
-/**
- * print_unsigned_int - Handles and prints an unsigned integer argument
- * @args: A va_list of arguments
- * @count: A pointer to the character count
- *
- * Description: This function extracts an unsigned integer from
- * va_list args, converts it to a string, and prints it.
- */
-void print_unsigned_int(va_list args, int *count)
-{
-	unsigned int num = va_arg(args, unsigned int);
-
-	unsigned int div = 1;
-
-	while (num / div > 9)
-	{
-		div *= 10;
-	}
-
-	while (div >= 1)
-	{
-		_putchar((num / div) % 10 + '0');
-		(*count)++;
-		div /= 10;
-	}
-}
 
 /**
  * print_short_unsigned_int - Handles and prints a short unsigned

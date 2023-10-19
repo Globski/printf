@@ -16,7 +16,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
 	else if (format[*i] == '%')
 		handle_percent(count);
 	else if (format[*i] == 'd' || format[*i] == 'i' || format[*i] == 'u')
-		handle_length_modifier(format, args, count, i);
+		handle_len_modifier(format, args, count, i);
 	else if (format[*i] == 'b')
 		handle_binary(args, count);
 	else if (format[*i] == 'o')

@@ -48,7 +48,7 @@ void handle_specifier(const char *format, va_list args, int *count, int *i)
  * numeric specifiers, such as 'd' and 'u'. It determines whether to
  * use long or short variants of the specifiers based on the format string.
  */
-void handle_length_modifier(const char *format, va_list args, int *count, int *i)
+void handle_len_modifier(const char *format, va_list args, int *count, int *i)
 {
 	if (format[*i] == 'd' || format[*i] == 'i')
 	{

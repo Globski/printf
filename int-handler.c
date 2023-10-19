@@ -7,7 +7,7 @@
  */
 void handle_int(va_list args, int *count)
 {
-	int num = va_arg(args, int);
+	long int num = va_arg(args, long int);
 	int div = 1;
 
 	if (args == NULL)

@@ -43,7 +43,11 @@ int main(void)
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
 	len = _printf("%d\n", INT_MIN);
+	len = _printf("%i\n", INT_MIN);
+	len = _printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+	len = _printf("%i + %i = %i\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
 	_printf("Unknown:[%r]\n");
+
 	printf("Unknown:[%r]\n");
 	_printf("%b\n", 98);
 	_printf("%S\n", "Best\nSchool");

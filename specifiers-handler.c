@@ -54,12 +54,12 @@ void handle_len_modifier(const char *format, va_list args, int *count, int *i)
 	{
 		if (format[*i + 1] == 'l')
 		{
-			print_long_int(args, count);
+			handle_long_int(args, count);
 			(*i)++;
 		}
 		else if (format[*i + 1] == 'h')
 		{
-			print_short_int(args, count);
+			handle_short_int(args, count);
 			(*i)++;
 		}
 		else
@@ -69,12 +69,12 @@ void handle_len_modifier(const char *format, va_list args, int *count, int *i)
 	{
 		if (format[*i + 1] == 'l')
 		{
-			print_long_unsigned_int(args, count);
+			handle_long_unsigned_int(args, count);
 			(*i)++;
 		}
 		else if (format[*i + 1] == 'h')
 		{
-			print_short_unsigned_int(args, count);
+			handle_short_unsigned_int(args, count);
 			(*i)++;
 		}
 		else

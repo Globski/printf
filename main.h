@@ -32,6 +32,5 @@ void print_short_int(va_list args, int *count);
 void print_short_unsigned_int(va_list args, int *count);
 void print_long_int(va_list args, int *count);
 void print_long_unsigned_int(va_list args, int *count);
-void print_unsigned_int(va_list args, int *count);
 
 #endif /* #ifndef MAIN_H */

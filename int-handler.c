@@ -15,7 +15,7 @@ void handle_int(va_list args, int *count)
 		_putchar('0');
 		(*count)++;
 	}
-	else (num < 0)
+	else if (num < 0)
 	{
 		_putchar('-');
 		(*count)++;

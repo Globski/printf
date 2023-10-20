@@ -10,7 +10,7 @@ void handle_pointer(va_list args, int *count)
 	void *ptr = va_arg(args, void *);
 	unsigned long num = (unsigned long)ptr;
 	char hex_nums[] = "0123456789abcdef";;
-	int i;
+	int i, hold;
 	int flagStart = 0;
 
 	if (ptr != NULL)
@@ -19,7 +19,8 @@ void handle_pointer(va_list args, int *count)
 		_putchar('x');
 		(*count) += 2;
 
-		for (i = (sizeof(void *) * 2) - 1; i >= 0; i--)
+		hold = (sizeof(void *) * 2) - 1;
+		for (i = hold; i >= 0; i--)
 		{
 			int digit = (num >> (i * 4)) & 0xf;
 

@@ -16,15 +16,23 @@ void handle_int(va_list args, int *count)
 		(*count)++;
 		num = -num;
 	}
-	while ((num / div) > 9)
+	if (num == 0)
 	{
-		div *= 10;
-	}
-	while (div >= 1)
-	{
-		_putchar(((num / div) % 10) + '0');
+		_putchar('0');
 		(*count)++;
-		div /= 10;
+	}
+	else
+	{
+		while ((num / div) > 9)
+		{
+			div *= 10;
+		}
+		while (div >= 1)
+		{
+			_putchar(((num / div) % 10) + '0');
+			(*count)++;
+			div /= 10;
+		}
 	}
 }
 

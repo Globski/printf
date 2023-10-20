@@ -10,7 +10,12 @@ void handle_int(va_list args, int *count)
 	int num = va_arg(args, int);
 	int div = 1;
 
-	if (num < 0)
+	if (num == 0)
+	{
+		_putchar('0');
+		(*count)++;
+	}
+	else (num < 0)
 	{
 		_putchar('-');
 		(*count)++;

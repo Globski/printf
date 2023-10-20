@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <limits.h>
 
 int _putchar(char c);
 void handle_string(va_list args, int *count);

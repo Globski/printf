@@ -14,6 +14,7 @@ void handle_int(va_list args, int *count)
 	{
 		_putchar('-');
 		(*count)++;
+		num = -num;
 	}
 	while ((num / div) > 9)
 	{

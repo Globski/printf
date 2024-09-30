@@ -2,6 +2,10 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## Introduction
+
+Welcome to the Printf Project, where we implement a custom `printf` function in C. `_printf` is a custom implementation of the standard C library function `printf`. It provides a flexible and extensible way to format and print output in a wide variety of styles. The project follows the rules and guidelines set forth by ALX Africa and focuses on recreating the behavior of the standard C library `printf` function. its main goal is to help students understand the inner workings of the `printf` function.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -15,10 +19,6 @@
 - [Contributors](#contributors)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
-
-## Introduction
-
-Welcome to the Printf Project, where we implement a custom `printf` function in C. `_printf` is a custom implementation of the standard C library function `printf`. It provides a flexible and extensible way to format and print output in a wide variety of styles. The project follows the rules and guidelines set forth by ALX Africa and focuses on recreating the behavior of the standard C library `printf` function. its main goal is to help students understand the inner workings of the `printf` function.
 
 ## Objectives
 
